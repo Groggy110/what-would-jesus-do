@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Would Jesus Do?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>What Would Jesus Do?</h1>
+        <div id="chat-window">
+            <div class="welcome-message">
+                <h2>Welcome to "What Would Jesus Do?"</h2>
+                <p>This app allows you to ask questions and receive answers based on biblical teachings. Simply type your question below and get insights inspired by Jesus' teachings.</p>
+                <div class="example-questions">
+                    <p>Examples:</p>
+                    <ul>
+                        <li>How can I forgive someone who has hurt me deeply?</li>
+                        <li>What would Jesus say about dealing with exam stress and academic pressure?</li>
+                        <li>How can I balance my social life and studies while staying true to my faith?</li>
+                        <li>What would Jesus do in a situation of peer pressure to cheat on a test?</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="messages-container">
+                <!-- Chat messages will be dynamically added here -->
+            </div>
+            <div id="spinner" class="spinner hidden"></div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask Jesus...">
+            <button id="send-button">➤</button>
+        </div>
+        <div id="api-key-modal" class="modal">
+            <div class="modal-content">
+                <h2>Enter your OpenAI API Key</h2>
+                <input type="text" id="api-key-input" placeholder="Enter your API key">
+                <button id="save-api-key">Save API Key</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
